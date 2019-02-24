@@ -8,7 +8,7 @@ r = sr.Recognizer()
 
 
 
-numbers = {'one': 1,'on':1, 'too':2, 'to':2 'two': 2, 'three': 3,'tree':3 'four':4,'for':4, 'fore':4, 'five':5, 'six':6, 'seven':7, 'eight':8, 'nine':9}
+numbers = {'one': 1,'on':1, 'too':2, 'to':2, 'two': 2, 'three': 3,'tree':3, 'four':4,'for':4, 'fore':4, 'five':5, 'six':6, 'seven':7, 'eight':8, 'nine':9}
 
 def drawBoard(board):
     #this function prints out the board that it was passed
