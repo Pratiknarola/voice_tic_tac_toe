@@ -8,7 +8,7 @@ r = sr.Recognizer()
 
 
 
-numbers = {'one': 1, 'two': 2, 'three': 3, 'four':4, 'five':5, 'six':6, 'seven':7, 'eight':8, 'nine':9}
+numbers = {'one': 1,'on':1, 'too':2, 'to':2 'two': 2, 'three': 3,'tree':3 'four':4,'for':4, 'fore':4, 'five':5, 'six':6, 'seven':7, 'eight':8, 'nine':9}
 
 def drawBoard(board):
     #this function prints out the board that it was passed
@@ -126,7 +126,7 @@ def getPlayerMove(board):
                 user_input = r.listen(source)
                 text = r.recognize_google(user_input)
                 print(text)
-            if text in 'one two three four five six seven eight nine'.split():
+            if text in 'one on two too to three tree four for fore five six seven eight nine'.split():
                 move = str(numbers[text])
             elif 0 < int(text) < 10:
                 move = str(int(text))
